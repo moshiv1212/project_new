@@ -90,25 +90,6 @@ body {
     font-family: 'Montserrat';
 }
 
-#black {
-    background-color: #556b2f;
-    color: white;
-}
-
-.mdl-layout__drawer {
-    background-color: #4caf50;
-    color: white;
-}
-
-#drawer-nav a {
-    color: white;
-}
-
-.mdl-button--colored {
-    background-color: #4caf50;
-    color: white;
-}
-
 #myButton {
     text-align: center;
     position: fixed;
