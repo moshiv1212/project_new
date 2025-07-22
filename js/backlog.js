@@ -46,6 +46,7 @@ function displayTasks() {
     let task = filteredTasks[i];
     let taskCard = document.createElement("div");
     taskCard.className = "mdl-cell mdl-cell--3-col";
+    taskCard.classList.add('task-card');
     let chip = task.priorityColour();
     // make this element clickable
     taskCard.setAttribute('data-index', i);
