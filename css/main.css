@@ -13,9 +13,14 @@ button {
     font-family: 'Montserrat';
 }
 
+body {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .mdl-layout__content {
-    background-color: white;
-    font-family: 'Montserrat';
+    background-color: transparent;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .mdl-grid {
@@ -86,7 +91,17 @@ button {
 }
 
 #black {
-    background-color: black;
+    background-color: #3f51b5;
+    color: white;
+}
+
+.mdl-layout__drawer {
+    background-color: #3949ab;
+    color: white;
+}
+
+#drawer-nav a {
+    color: white;
 }
 
 #myButton {
@@ -111,6 +126,23 @@ button {
 #taskcard {
     width: 320px;
     height: 320px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.task-card {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #centre {
