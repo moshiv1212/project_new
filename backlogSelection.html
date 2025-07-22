@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <title>ScrumMASTER</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="A project management software for agile projects" />
 
   <!-- Material Design Lite -->
-  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="https://code.getmdl.io/1.3.0/material.min.js" defer></script>
+  <link rel="stylesheet" href="js/polyfill/dialog-polyfill.css" />
+  <script src="js/polyfill/dialog-polyfill.js" defer></script>
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
   <!-- Material Design icon and Montserrat fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -21,7 +25,7 @@
     <header class="mdl-layout__header" id="black">
       <div class="mdl-layout__header-row">
         <span class="mdl-layout-title" id="Montserrat"><a href="index.html"><img src="img/ClockGears.jpeg"
-              id="topleftlogo" /></a>
+              id="topleftlogo" alt="ScrumMaster logo" /></a>
           ScrumMASTER</span>
         <!-- Add spacer, to align page title to the right -->
         <div class="mdl-layout-spacer"></div>
@@ -57,17 +61,18 @@
                 <option value="TESTING">Testing</option>
                 <option value="UI">UI</option>
               </select>
+              <label class="mdl-textfield__label" for="filterlist">Filter</label>
             </div>
           </div>
           <div class="mdl-cell mdl-cell--2-col">
             <a href="listofSprints.html">
-              <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect " id="saveButton">
-                Save & Return
+              <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="saveButton">
+                <i class="material-icons">save</i>&nbsp;Save &amp; Return
               </button>
             </a>
             &nbsp;
-            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect " id="startButton">
-              Start Sprint
+            <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" id="startButton">
+              <i class="material-icons">play_arrow</i>&nbsp;Start Sprint
             </button>
           </div>
         </div>
@@ -102,9 +107,9 @@
       </dialog>
     </main>
   </div>
-  <script src="js/config.js"></script>
-  <script src="js/shared.js"></script>
-  <script src="js/selectBacklogTask.js"></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/shared.js" defer></script>
+  <script src="js/selectBacklogTask.js" defer></script>
 </body>
 
 </html>
