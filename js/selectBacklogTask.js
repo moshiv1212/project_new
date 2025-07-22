@@ -19,12 +19,12 @@
  * filters tasks in product backlog by tag
  */
 function filter() {
-    let tagRef = document.getElementById("filterlist");
+    const tagRef = document.getElementById("filterlist");
     tagRef.addEventListener('change', _ => {
-        let tag = tagRef.value;
-        filteredTasks = tag == "" ? allTasks : allTasks.filter(e => e.tag.toUpperCase() == tag);
+        const tag = tagRef.value;
+        filteredTasks = tag === "" ? allTasks : allTasks.filter(e => e.tag.toUpperCase() === tag);
         displayTasks();
-    })
+    });
 
 }
 
@@ -252,7 +252,7 @@ let allTasks = [].concat(currentSprintTask, backlogTasks.criticalPriorityList, b
 
 let filteredTasks = allTasks;
 // register dialog
-var dialog = document.querySelector('dialog');
+const dialog = document.querySelector('dialog');
 if (!dialog.showModal) {
     dialogPolyfill.registerDialog(dialog);
 }
@@ -266,8 +266,10 @@ document.getElementById("startButton").addEventListener('click', _ => startSprin
 // confirms
 document.getElementById("saveButton").addEventListener('click', _ => {
     if (saveSelection()) window.location = "listOfSprints.html";
-})
+});
 // Display tasks when page loads if backlogTasks is not empty
-filter();
-displayTasks();
+document.addEventListener('DOMContentLoaded', () => {
+    filter();
+    displayTasks();
+});
 
