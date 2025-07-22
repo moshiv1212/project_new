@@ -1,0 +1,59 @@
+a {
+    color: transparent;
+}
+
+.sections {
+    min-height: 300px;
+    align-content: center;
+}
+
+.sections h1 {
+    font-size: x-large;
+    margin: 5px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: black;
+}
+
+#sprintName {
+    margin: 5px;
+    font-family: 'Montserrat';
+}
+
+#sprintDate {
+    margin: 5px;
+    font-family: 'Montserrat';
+}
+
+#Not\ Started {
+    background-color: rgb(251, 110, 110);
+    padding: 20px;
+}
+
+#In\ Progress {
+    background-color: palegoldenrod;
+    padding: 20px;
+}
+
+#Completed {
+    background-color: aquamarine;
+    padding: 20px;
+}
+
+#container {
+    text-align: right;
+}
+
+#burndownchart,
+#completeSprint {
+    display: inline-block;
+}
+
+#taskcard {
+    width: 320px;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    padding: 20px;
+}

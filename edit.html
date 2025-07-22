@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ScrumMASTER</title>
+  <meta name="description" content="A project management software for agile projects">
+
+  <!-- Material Design Lite -->
+  <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <!-- Material Design icon and Montserrat fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/addTask.css">
+
+  <script src="js/config.js"></script>
+</head>
+
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header" id="black">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title" id="Montserrat"><a href="index.html"><img src="img/ClockGears.jpeg"
+              id="topleftlogo"></a> ScrumMASTER</span>
+        <!-- Add spacer, to align page title to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Title -->
+        <span class="mdl-layout-title" id="Montserrat">Edit Your Task</span>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer" id="black">
+      <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+        <header class="mdl-layout__header mdl-layout__header--transparent" id="top-left">
+          <div class="mdl-layout__header-row" id="top-left-header">
+            <!-- Title -->
+            <span class="mdl-layout-title" id="header-title">ScrumMASTER</span>
+          </div>
+        </header>
+      </div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation" id="drawer-nav">
+        <a class="mdl-navigation__link" href="index.html">Product Backlog</a>
+        <a class="mdl-navigation__link" href="listOfSprints.html">List of Sprints</a>
+        <a class="mdl-navigation__link" href="listOfTeamMembers.html">Team</a>
+      </nav>
+    </div>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--12-col mdl-grid" id="template">
+        <div class="login-box">
+          <h2>Edit your task</h2>
+          <form>
+            <div class="user-box">
+              <input type="text" name="taskname" id="taskName">
+              <label>Task name</label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="description" id="description">
+              <label>Task description</label>
+            </div>
+            <div class="user-box">
+              <input type="number" name="points" id="points">
+              <label>Story points</label>
+            </div>
+
+            <div class="user-box">
+              <div class="dropdown">
+                <select name="Assignee" id="assignee">
+                  <option value="" selected disabled hidden>Assignee</option>
+                  <option value="Person 1">Person 1</option>
+                  <option value="Person 2">Person 2</option>
+                  <option value="Person 3">Person 3</option>
+                  <option value="Person 4">Person 4</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="user-box">
+              <div class="dropdown">
+                <select name="Type" id="type">
+                  <option value="" selected disabled hidden>Type</option>
+                  <option value="story">Story</option>
+                  <option value="bug">Bug</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="user-box">
+              <div class="dropdown">
+                <select name="Priority" id="priority">
+                  <option value="" selected disabled hidden>Priority</option>
+                  <option value="critical">Critical</option>
+                  <option value="high">High</option>
+                  <option value="medium">Medium</option>
+                  <option value="low">Low</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="user-box">
+              <div class="dropdown">
+                <select name="Tags" id="tag">
+                  <option value="" selected disabled hidden>Tags</option>
+                  <option value="core">Core</option>
+                  <option value="UI">UI</option>
+                  <option value="testing">Testing</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="user-box">
+              <div class="dropdown">
+                <select name="taskstatus" id="taskStatus">
+                  <option value="" selected disabled hidden>Task Status</option>
+                  <option value="Not Started">Not started</option>
+                  <option value="In Progress">In progress</option>
+                  <option value="Completed">Completed</option>
+                </select>
+              </div>
+            </div>
+            <a href='#'>
+              <button class="button" input type="button" onclick="cancel()">
+                Cancel
+              </button>
+            </a>
+            <a href="#">
+              <button class="button" input type="button" id="add" onclick="verifyInputs()">
+                Confirm
+              </button>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="js/shared.js"></script>
+  <script src="js/edit.js"></script>
+</body>
+
+</html>

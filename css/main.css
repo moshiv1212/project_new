@@ -1,0 +1,197 @@
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Montserrat';
+}
+
+option {
+    font-family: 'Montserrat';
+}
+
+button {
+    font-family: 'Montserrat';
+}
+
+.mdl-layout__content {
+    background-color: white;
+    font-family: 'Montserrat';
+}
+
+.mdl-grid {
+    background-color: white;
+    font-family: 'Montserrat';
+}
+
+.demo-layout-transparent {
+    background: url(img/ClockGears.jpeg) center / cover;
+    height: 200px;
+    padding-top: 15px;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+    your background is light. */
+    color: white;
+}
+
+.mdl-layout__title {
+    font-family: 'Montserrat';
+}
+
+.mdl-layout__drawer {
+    border-right: 1px solid black;
+}
+.mdl-data-table th {
+    color: white;
+}
+
+#top-left-header {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+#top-left {
+    padding: 68px;
+}
+
+#top-left11 {
+    padding: 68px;
+}
+
+#top-left1 {
+    padding: 0px 50px;
+    margin: 10px 0 10px
+}
+#top-left2 {
+    margin: 10px 0 10px
+}
+
+#header-title {
+    font-size: 30px;
+    background-color: black;
+    font-family: 'Montserrat';
+}
+
+#template {
+    padding: 50px;
+    padding-top: 100px;
+}
+
+#drawer-nav {
+    margin-top: 205px;
+    font-family: 'Montserrat';
+}
+
+#black {
+    background-color: black;
+}
+
+#myButton {
+    text-align: center;
+    position: fixed;
+    left: 47%;
+}
+
+#myButton1 {
+    text-align: center;
+    left: 47%;
+}
+
+#topleftlogo {
+    height: 56px;
+}
+
+#Montserrat {
+    font-family: "Montserrat";
+}
+
+#taskcard {
+    width: 320px;
+    height: 320px;
+}
+
+#centre {
+    text-align: center;
+}
+
+#centre11 {
+    text-align: center;
+}
+
+#middle {
+    text-align: center;
+    padding: 24px 16px;
+    color: rgb(113, 113, 113);
+}
+
+.middle {
+    text-align: center;
+    padding: 24px 16px;
+    color: rgb(113, 113, 113);
+}
+
+#listofsprints {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#listofmembers {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card {
+    font-size: 18.5px
+}
+
+#darkredchip {
+    background-color: darkred;
+    vertical-align: text-bottom;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#redchip {
+    background-color: red;
+    vertical-align: text-bottom;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#orangechip {
+    background-color: orange;
+    vertical-align: text-bottom;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#greenchip {
+    background-color: green;
+    vertical-align: text-bottom;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#redchip1 {
+    background-color: red;
+    vertical-align: middle;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#greenchip1 {
+    background-color: green;
+    vertical-align: middle;
+    height: 18px;
+    padding: 0 9px;
+}
+
+#bluechip1 {
+    background-color: blue;
+    vertical-align: middle;
+    height: 18px;
+    padding: 0 9px;
+}
