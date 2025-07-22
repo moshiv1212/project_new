@@ -17,12 +17,12 @@
  * filters tasks in product backlog by tag
  */
 function filter() {
-  let tagRef = document.getElementById("filterlist");
+  const tagRef = document.getElementById("filterlist");
   tagRef.addEventListener('change', _ => {
-    let tag = tagRef.value;
-    filteredTasks = tag == "" ? allTasks : allTasks.filter(e => e.tag.toUpperCase() == tag);
+    const tag = tagRef.value;
+    filteredTasks = tag === "" ? allTasks : allTasks.filter(e => e.tag.toUpperCase() === tag);
     displayTasks();
-  })
+  });
 
 }
 
@@ -46,6 +46,7 @@ function displayTasks() {
     let task = filteredTasks[i];
     let taskCard = document.createElement("div");
     taskCard.className = "mdl-cell mdl-cell--3-col";
+    taskCard.classList.add('task-card');
     let chip = task.priorityColour();
     // make this element clickable
     taskCard.setAttribute('data-index', i);
@@ -170,15 +171,15 @@ function displayDialog(index) {
 let allTasks = [].concat(backlogTasks.criticalPriorityList, backlogTasks.highPriorityList, backlogTasks.mediumPriorityList, backlogTasks.lowPriorityList);
 let filteredTasks = allTasks;
 
-console.log(backlogTasks)
-
 // register dialog
-var dialog = document.querySelector('dialog');
+const dialog = document.querySelector('dialog');
 if (!dialog.showModal) {
   dialogPolyfill.registerDialog(dialog);
 }
 
 // Display tasks when page loads if backlogTasks is not empty
-filter();
-displayTasks();
+document.addEventListener('DOMContentLoaded', () => {
+  filter();
+  displayTasks();
+});
 
